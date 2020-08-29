@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Food", "Food\Food.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sort", "sort\sort.vcxproj", "{F98C52A0-3F5A-4038-87C6-F0F8808ACF8C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseInParenthesis", "ReverseInParenthesis\ReverseInParenthesis.vcxproj", "{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{F98C52A0-3F5A-4038-87C6-F0F8808ACF8C}.Release|x64.Build.0 = Release|x64
 		{F98C52A0-3F5A-4038-87C6-F0F8808ACF8C}.Release|x86.ActiveCfg = Release|Win32
 		{F98C52A0-3F5A-4038-87C6-F0F8808ACF8C}.Release|x86.Build.0 = Release|Win32
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Debug|x64.ActiveCfg = Debug|x64
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Debug|x64.Build.0 = Debug|x64
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Debug|x86.ActiveCfg = Debug|Win32
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Debug|x86.Build.0 = Debug|Win32
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Release|x64.ActiveCfg = Release|x64
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Release|x64.Build.0 = Release|x64
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Release|x86.ActiveCfg = Release|Win32
+		{2718917A-CACF-4C9A-90A8-A1FDFEF26E0F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
