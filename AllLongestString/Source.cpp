@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<string.h>
 
 int main() {
 	int max = 0,n;
@@ -8,12 +7,22 @@ int main() {
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++) {
 		scanf("%s", s[i]);
-		if (max < strlen(s[i])) {
-			max = strlen(s[i]);
+		int len = 0,j=0;
+		while (s[i][j] != '\0') {
+			len++;
+			j++;
+		}
+		if (max < len) {
+			max = len;
 		}
 	}
-	for (int i = 0; i < strlen(s[i]); i++) {
-		if (max == strlen(s[i])) {
+	for (int i = 0; i < n; i++) {
+		int len = 0, j = 0;
+		while (s[i][j] != '\0') {
+			len++;
+			j++;
+		}
+		if (max == len) {
 			printf("%s\n", s[i]);
 		}
 	}
