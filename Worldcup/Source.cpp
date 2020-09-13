@@ -62,16 +62,12 @@ int main() {
 		}
 		Team[i].raw = Team[i].shoot;
 	}
-	checkScore(Team);
-	int max = 0;
 	for (int i = 0; i < 4; i++) {
 		for (int j = 0; j < 4; j++) {
 			Team[i].raw -= Team[j].score[i];
 		}
-		if (max < Team[i].total) {
-			max = Team[i].total;
-		}
 	}
+	checkScore(Team);
 	sort(Team);
 	printBoard(Team);
 
