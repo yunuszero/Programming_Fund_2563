@@ -43,7 +43,11 @@ void playReversi(char grid[8][9], int posx, int posy, char change) {
 			}
 		}
 		//check lower
-		if (grid[posy + i][posx] == change && posy + i >= 0 && i != 1) {
+		if (grid[posy + i][posx] == change && posy + i < 8 /*&& i != 1*/) {
+			if (i == 1) {
+				playReversi(grid, posx, posy, (change == 'O') ? 'X' : 'O');
+				break;
+			}
 			grid[posy][posx] = change;
 			int j = posy + i - 1;
 			while (j != posy) {
