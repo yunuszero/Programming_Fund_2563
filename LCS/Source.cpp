@@ -25,7 +25,7 @@ int main() {
             mem[i][j] = -1;
         }
     }
-    cout << LCS(a.size() - 1, b.size() - 1);
+    cout << "The length of LCS is " << LCS(a.size() - 1, b.size() - 1);
 
     return 0;
 }

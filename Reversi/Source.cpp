@@ -3,6 +3,7 @@
 using namespace std;
 
 void playReversi(char[8][9], int, int , char);
+void Tester(char[8][9], int, int, char);
 
 int main() {
 	char grid[8][9] = { "........",
@@ -18,7 +19,8 @@ int main() {
 	char posx;
 	for (int i = 0; i < k; i++) {
 		cin >> posx >> posy;
-		playReversi(grid, posx - 'a', posy - 1, (i%2==0)? 'X' : 'O');
+		//playReversi(grid, posx - 'a', posy - 1, (i%2==0)? 'X' : 'O');
+		Tester(grid, posx - 'a', posy - 1, (i % 2 == 0) ? 'X' : 'O');
 	}
 
 	for (int i = 0; i < 8; i++) {
@@ -35,6 +37,7 @@ void playReversi(char grid[8][9], int posx, int posy, char change) {
 	for (int i = 1; i < 8; i++) {
 		// check upper
 		if (grid[posy - i][posx] == change && posy - i >= 0 && i != 1) {
+			if (grid[posy - 1][posx] == change) break;
 			grid[posy][posx] = change;
 			int j = posy - i + 1;
 			while (j != posy) {
@@ -43,11 +46,8 @@ void playReversi(char grid[8][9], int posx, int posy, char change) {
 			}
 		}
 		//check lower
-		if (grid[posy + i][posx] == change && posy + i < 8 /*&& i != 1*/) {
-			if (i == 1) {
-				playReversi(grid, posx, posy, (change == 'O') ? 'X' : 'O');
-				break;
-			}
+		if (grid[posy + i][posx] == change && posy + i >= 0) {
+			if (grid[posy + 1][posx] == change) break; 
 			grid[posy][posx] = change;
 			int j = posy + i - 1;
 			while (j != posy) {
@@ -105,6 +105,28 @@ void playReversi(char grid[8][9], int posx, int posy, char change) {
 				if (grid[k][j] == '.') break;
 				grid[k--][j++] = change;
 			}
+		}
+	}
+}
+
+void Tester(char grid[8][9], int posx, int posy, char change) {
+	int endpos = posx-1;
+	for (int i = 1; i < 8; i++) {
+		if (grid[posy][posx + i] == ( (change == 'X') ? 'O' : 'X') && posx + i < 8)
+			endpos = posx + i;
+		else {
+			if (grid[posy][posx + i] != '.')
+				while (endpos >= posx) {
+					grid[posy][endpos--] = change;
+				}
+		}
+		if (grid[posy][posx + i] == ((change == 'X') ? 'O' : 'X') && posx + i < 8)
+			endpos = posx + i;
+		else {
+			if (grid[posy][posx + i] != '.')
+				while (endpos >= posx) {
+					grid[posy][endpos--] = change;
+				}
 		}
 	}
 }
