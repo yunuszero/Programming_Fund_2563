@@ -16,12 +16,10 @@ int main() {
 	int n;
 	struct member M[10], F[10];
 	scanf_s("%d", &n);
-	printf("Male:\n");
 	for (int i = 0; i < n; i++) {
 		cin >> M[i].name >> M[i].height;
 	}
 	sort(M, n);
-	printf("Female:\n");
 	for (int i = 0; i < n; i++) {
 		cin >> F[i].name >> F[i].height;
 	}
