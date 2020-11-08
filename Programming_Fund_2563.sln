@@ -47,6 +47,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mazu", "Mazu\Mazu.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rope", "Rope\Rope.vcxproj", "{E09F504A-A565-43A6-9DB0-89BE17819001}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rain", "Rain\Rain.vcxproj", "{6B11A240-9E44-4E7D-8483-E268ED6B54C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +233,14 @@ Global
 		{E09F504A-A565-43A6-9DB0-89BE17819001}.Release|x64.Build.0 = Release|x64
 		{E09F504A-A565-43A6-9DB0-89BE17819001}.Release|x86.ActiveCfg = Release|Win32
 		{E09F504A-A565-43A6-9DB0-89BE17819001}.Release|x86.Build.0 = Release|Win32
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Debug|x64.ActiveCfg = Debug|x64
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Debug|x64.Build.0 = Debug|x64
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Debug|x86.Build.0 = Debug|Win32
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Release|x64.ActiveCfg = Release|x64
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Release|x64.Build.0 = Release|x64
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Release|x86.ActiveCfg = Release|Win32
+		{6B11A240-9E44-4E7D-8483-E268ED6B54C5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
