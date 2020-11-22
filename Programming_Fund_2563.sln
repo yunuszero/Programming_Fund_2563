@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rain", "Rain\Rain.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RotateList", "RotateList\RotateList.vcxproj", "{04EEA937-0EC0-46E1-9C61-3213BDEC9C50}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Largest_Rect", "Largest_Rect\Largest_Rect.vcxproj", "{4397D241-3DBD-4B4E-9B13-6583D40CA217}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{04EEA937-0EC0-46E1-9C61-3213BDEC9C50}.Release|x64.Build.0 = Release|x64
 		{04EEA937-0EC0-46E1-9C61-3213BDEC9C50}.Release|x86.ActiveCfg = Release|Win32
 		{04EEA937-0EC0-46E1-9C61-3213BDEC9C50}.Release|x86.Build.0 = Release|Win32
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Debug|x64.ActiveCfg = Debug|x64
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Debug|x64.Build.0 = Debug|x64
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Debug|x86.ActiveCfg = Debug|Win32
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Debug|x86.Build.0 = Debug|Win32
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Release|x64.ActiveCfg = Release|x64
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Release|x64.Build.0 = Release|x64
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Release|x86.ActiveCfg = Release|Win32
+		{4397D241-3DBD-4B4E-9B13-6583D40CA217}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
